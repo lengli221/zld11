@@ -377,7 +377,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\05.sys_os;..\05.sys_os\src;..\06.st_driver;..\06.st_driver\00.st_bsp;..\06.st_driver\00.st_bsp\00.mdk;..\06.st_driver\00.st_bsp\01.sys;..\06.st_driver\00.st_bsp\02.driver;..\06.st_driver\00.st_bsp\02.driver\cm3;..\06.st_driver\00.st_bsp\02.driver\inc;..\06.st_driver\00.st_bsp\02.driver\src;..\01.app;..\02.cmm;..\02.cmm\00.type;..\02.cmm\01.queue;..\02.cmm\02.common;..\03.pro;..\04.driver;..\04.driver\00.usart;..\04.driver\01.stm32f207bsp;..\04.driver\02.os_bsp;..\04.driver\03.SPIFlash;..\04.driver\04.gpio;..\04.driver\05.rtc;..\04.driver\06.adc;..\04.driver\07.timer;..\03.pro\01.temp;..\04.driver\08.eeprom;..\04.driver\09.watchdog;..\07.errLogicAnalyze;..\07.errLogicAnalyze\00.sysErr;..\07.errLogicAnalyze\01.apiErr;..\04.driver\10.backup;..\04.driver\11.can;..\02.cmm\03.fileOperate;..\09.debug\00.list;..\04.driver\04.gpio\module;..\01.app\module;..\01.app\addr_Allocation;..\01.app\param;..\01.app\lowerlayer</IncludePath>
+              <IncludePath>..\05.sys_os;..\05.sys_os\src;..\06.st_driver;..\06.st_driver\00.st_bsp;..\06.st_driver\00.st_bsp\00.mdk;..\06.st_driver\00.st_bsp\01.sys;..\06.st_driver\00.st_bsp\02.driver;..\06.st_driver\00.st_bsp\02.driver\cm3;..\06.st_driver\00.st_bsp\02.driver\inc;..\06.st_driver\00.st_bsp\02.driver\src;..\01.app;..\02.cmm;..\02.cmm\00.type;..\02.cmm\01.queue;..\02.cmm\02.common;..\03.pro;..\04.driver;..\04.driver\00.usart;..\04.driver\01.stm32f207bsp;..\04.driver\02.os_bsp;..\04.driver\03.SPIFlash;..\04.driver\04.gpio;..\04.driver\05.rtc;..\04.driver\06.adc;..\04.driver\07.timer;..\03.pro\01.temp;..\04.driver\08.eeprom;..\04.driver\09.watchdog;..\07.errLogicAnalyze;..\07.errLogicAnalyze\00.sysErr;..\07.errLogicAnalyze\01.apiErr;..\04.driver\10.backup;..\04.driver\11.can;..\02.cmm\03.fileOperate;..\09.debug\00.list;..\04.driver\04.gpio\module;..\01.app\module;..\01.app\addr_Allocation;..\01.app\param;..\01.app\lowerlayer;..\01.app\upperlayer</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1246,6 +1246,71 @@
               <FileName>lowerlayer_chargerInfo.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\01.app\lowerlayer\lowerlayer_chargerInfo.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>15.upperlayer</GroupName>
+          <Files>
+            <File>
+              <FileName>upperlayer_Parse.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\01.app\upperlayer\upperlayer_Parse.c</FilePath>
+            </File>
+            <File>
+              <FileName>upperlayer_Parse.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\01.app\upperlayer\upperlayer_Parse.h</FilePath>
+            </File>
+            <File>
+              <FileName>upperlayer_ctrState.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\01.app\upperlayer\upperlayer_ctrState.c</FilePath>
+            </File>
+            <File>
+              <FileName>upperlayer_ctrState.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\01.app\upperlayer\upperlayer_ctrState.h</FilePath>
+            </File>
+            <File>
+              <FileName>upperlayer_reply.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\01.app\upperlayer\upperlayer_reply.c</FilePath>
+            </File>
+            <File>
+              <FileName>upperlayer_reply.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\01.app\upperlayer\upperlayer_reply.h</FilePath>
+            </File>
+            <File>
+              <FileName>upperlayer_subState.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\01.app\upperlayer\upperlayer_subState.c</FilePath>
+            </File>
+            <File>
+              <FileName>upperlayer_subState.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\01.app\upperlayer\upperlayer_subState.h</FilePath>
+            </File>
+            <File>
+              <FileName>upperlayer_cfg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\01.app\upperlayer\upperlayer_cfg.c</FilePath>
+            </File>
+            <File>
+              <FileName>upperlayer_cfg.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\01.app\upperlayer\upperlayer_cfg.h</FilePath>
+            </File>
+            <File>
+              <FileName>upperlayer_bms.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\01.app\upperlayer\upperlayer_bms.c</FilePath>
+            </File>
+            <File>
+              <FileName>upperlayer_bms.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\01.app\upperlayer\upperlayer_bms.h</FilePath>
             </File>
           </Files>
         </Group>

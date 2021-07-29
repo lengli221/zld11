@@ -85,6 +85,15 @@ uint8 get_DoorState(uint8 addr);
 uint8 get_DoorLoc(uint8 addr);
 
 /*
+** get Sub State Info 
+**	@param:
+**		uint8:仓门地址
+**	@return:
+**		LLParse_StateInfo:分控状态信息
+*/
+LLParse_StateInfo get_SubStateInfo(uint8 addr);
+
+/*
 ** Lowerlayer State Info
 */
 void LowerLayer_StateInfo(void);

@@ -22,12 +22,9 @@
 
 #define LowerLayerParseTask_Prio									(int8)4
 #define LowerLayerReplyTask_Prio									(int8)5
-#define SysCtrlLogic_Prio													(int8)6
-
-/*
-** 与仓门数绑定的定义
-*/
-typedef uint8 	DoorNumDefine;
+#define UpperLayerParseTask_Prio									(int8)6
+#define UpperLayerReplyTask_Prio									(int8)7
+#define SysCtrlLogic_Prio													(int8)8
 
 #endif
 

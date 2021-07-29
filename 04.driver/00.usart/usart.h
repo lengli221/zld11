@@ -1,26 +1,29 @@
 #ifndef __USART_H_
 #define __USART_H_
 
+#include "type.h"
+#include "queue.h"
+
 /*
 ** 串口1缓存参数
 */
-#define UART1_BUFLEN_R								1024
-#define UART1_BUFLEN_S								256
-#define DMA1_BUFLEN         							256  
+#define UART1_BUFLEN_R												1024
+#define UART1_BUFLEN_S												256
+#define DMA1_BUFLEN         									256 
 
 /*
 ** 串口2 缓存参数
 */
-#define UART_BUFLEN_R								1024
-#define UART_BUFLEN_S								256
-#define DMA_BUFLEN         							256      
+#define UART_BUFLEN_R													1024
+#define UART_BUFLEN_S													256
+#define DMA_BUFLEN         										256      
 
 /*
 ** 串口3 缓存参数
 */
-#define UART3_BUFLEN_R								256
-#define UART3_BUFLEN_S								256
-#define DMA3_BUFLEN								256
+#define UART3_BUFLEN_R												256
+#define UART3_BUFLEN_S												256
+#define DMA3_BUFLEN														256
 
 #define USART1_DR_ADDRESS           					((uint32)USART1 + 0x04)
 #define USART2_DR_ADDRESS           					((uint32)USART2 + 0x04)
@@ -29,19 +32,19 @@
 
 #define BSP_ComType_USART           					(uint8)0x01
 
-#define BSP_ComUsart1								(uint8)0x01/*card*/
-#define BSP_ComUsart2								(uint8)0x02/*上层接口--用于调试*/
-#define BSP_ComUsart3								(uint8)0x03/*lcd*/
+#define BSP_ComUsart1													(uint8)0x01/*upperlayer*/
+#define BSP_ComUsart2													(uint8)0x02
+#define BSP_ComUsart3													(uint8)0x03
 
-#define BSP_COM_NO									0			
-#define BSP_COM_EVEN								1			
-#define BSP_COM_ODD								2			
+#define BSP_COM_NO														0			
+#define BSP_COM_EVEN													1			
+#define BSP_COM_ODD														2			
 
-#define BSP_COM_STOP1								1
-#define BSP_COM_STOP2								2
+#define BSP_COM_STOP1													1
+#define BSP_COM_STOP2													2
 
-#define UpperLayer_Rx       							(GPIOG->BSRRH = GPIO_Pin_14)
-#define UpperLayer_Tx       							(GPIOG->BSRRL = GPIO_Pin_14)
+#define UpperLayer_Rx       									(GPIOG->BSRRH = GPIO_Pin_14)
+#define UpperLayer_Tx       									(GPIOG->BSRRL = GPIO_Pin_14)
 
 typedef struct {
   bool  *  Busy;    

@@ -25,6 +25,16 @@ void hard_init(void){
 
 void Thread(void *p){	
 	/*
+	** 提供系统软件创建上层协议解析接口函数
+	*/
+	UpperLayerParse_Init();
+	
+	/*
+	**提供系统软件创建上层协议回复接口函数
+	*/
+	UpperLayerReply_Init();
+	
+	/*
 	** 提供系统软件创建系统控制接口函数
 	*/
 	SysCtrlLogic_Init();

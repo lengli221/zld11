@@ -35,6 +35,17 @@ uint8 get_BmsSoc(uint8 doorId){
 	return bmsInfo[doorId].Field.item.soc;
 }
 
+/*
+** get Bms Info
+**	@param:
+**		uint8:仓门地址
+**	@return:
+**		BmsInfo:bms信息
+*/
+BmsInfo get_BmsInfo(uint8 addr){
+	return bmsInfo[addr];
+}
+
 /*----------------------------------------------Reply------------------------------------------------------------------------*/
 /*
 ** fill Bms

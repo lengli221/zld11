@@ -68,6 +68,17 @@ uint8 get_DoorLoc(uint8 addr){
 	return  llParse_StateInfo[addr].doorLoc;
 }
 
+/*
+** get Sub State Info 
+**	@param:
+**		uint8:仓门地址
+**	@return:
+**		LLParse_StateInfo:分控状态信息
+*/
+LLParse_StateInfo get_SubStateInfo(uint8 addr){
+	return llParse_StateInfo[addr];
+}
+
 /*----------------------------------------------Reply------------------------------------------------------------------------*/
 /*
 ** Fill State Info

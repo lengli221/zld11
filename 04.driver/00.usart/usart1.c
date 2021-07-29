@@ -97,7 +97,7 @@ bool Usart1_DmaWrite(uint8 * txBuf,uint32 txNum){
 			if(!(*uart1Info.Busy)){
 				*uart1Info.Busy = true;
 				FlushQueue(uart1Info.TxQueue);
-				/*FlushQueue(uart1Info.RxQueue);*/
+				FlushQueue(uart1Info.RxQueue);
 				while(txNum>0){
 					if(Enqueue(uart1Info.TxQueue, *txBuf++))
 						txNum--;

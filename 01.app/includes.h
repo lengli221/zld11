@@ -67,5 +67,13 @@
 #include "lowerlayer_bms.h"
 #include "lowerlayer_chargerInfo.h"
 
+/*upperlayer*/
+#include "upperlayer_ctrState.h"
+#include "upperlayer_subState.h"
+#include "upperlayer_cfg.h"
+#include "upperlayer_bms.h"
+#include "upperlayer_Parse.h"
+#include "upperlayer_reply.h"
+
 #endif
 
