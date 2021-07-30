@@ -23,7 +23,10 @@ static const UpperLayerReplyFunTable upperLayerReplyFunTable[] = {
 	{0x81,packect_CtrState},
 	{0x82,packect_SubState},
 	{0x83,packect_CfgFlag},
-	{0x84,packect_bms}
+	{0x84,packect_bms},
+	{0x85,packect_openDoor},
+	{0x86,packect_openDoorResult},
+	{0x87,packect_charger}
 };
 static uint8 upperLayerReplyFunTableNum = sizeof(upperLayerReplyFunTable)/sizeof(UpperLayerReplyFunTable);
 
@@ -100,7 +103,22 @@ void SM_UpperLayerReply_Task(void* p_arg){
 		/*
 		** bms Logic
 		*/
-		bms_Logic();		
+		bms_Logic();	
+
+		/*
+		** charger Logic
+		*/
+		charger_Logic();		
+		
+		/*
+		** open Door Proc
+		*/
+		open_DoorProc();	
+
+		/*
+		** open Door Result Proc 
+		*/
+		open_DoorResultProc();		
 		
 		/*
 		** CAN1 Tx Task

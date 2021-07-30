@@ -4,6 +4,7 @@
 #define LL_FunId_StateInfo_01					(uint8)0x01/*状态信息*/
 #define LL_FunId_Cfg_02								(uint8)0x02/*配置信息*/
 #define LL_FunId_OpenDoor_03					(uint8)0x03/*开仓动作*/
+#define LL_FunId_DoorResult_04				(uint8)0x04/*仓门结果*/
 #define LL_FunId_BmsInfo_80						(uint8)0x80/*Bms信息*/
 #define LL_FunId_ChargerInfo_81				(uint8)0x81/*充电器信息*/
 

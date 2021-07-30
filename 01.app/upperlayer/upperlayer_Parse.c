@@ -31,7 +31,10 @@ static const UpperLayerFunTable upperLayerFunTabel[] = {
 	{0x01,parse_CtrState},
 	{0x02,parse_SubState},
 	{0x03,parse_CfgInfo},
-	{0x04,parse_bms}
+	{0x04,parse_bms},
+	{0x05,parse_openDoor},
+	{0x06,parse_openDoorResult},
+	{0x07,parse_charger}
 };
 static uint8 upperLayerFunTabelNum = sizeof(upperLayerFunTabel)/sizeof(UpperLayerFunTable);
 
@@ -108,7 +111,7 @@ void SM_UpperLayerParse_Task(void* p_arg){
 	uint16 ucLen = 0;
 	uint16 ucRecvLen = 0;
 	
-	Sleep(2000);
+	Sleep(4000);/*收集分控信息,再响应安卓信息*/
 	
 	for(;;){
 		

@@ -52,7 +52,7 @@ void packect_SubState(UpperLayerFrame *ulFreame,uint8* item,uint8 addr,uint8 num
 ** sub State Logic
 */
 void sub_StateLogic(void){
-	SmCmd cmd = {true,0x82,0,0,0};
+	SmCmd cmd = {true,0x82,0,0,1};
 	static uint32 collectTick[SysCtr_AllDoorNum] = {0};
 	static uint32 circTick = 0;
 	uint8 i=0;

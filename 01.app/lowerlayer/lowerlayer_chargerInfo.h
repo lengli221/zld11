@@ -57,6 +57,15 @@ typedef union{
 #pragma pack()
 
 /*
+** get Charger Info
+**	@param:
+**		uint8:仓门地址
+**	@return:
+**		ChargerInfo:充电器详细信息
+*/
+ChargerInfo get_ChargerInfo(uint8 addr);
+
+/*
 ** Lowerlayer Charger
 */
 void Lowerlayer_Charger(void);

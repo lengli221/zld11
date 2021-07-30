@@ -1247,6 +1247,16 @@
               <FileType>5</FileType>
               <FilePath>..\01.app\lowerlayer\lowerlayer_chargerInfo.h</FilePath>
             </File>
+            <File>
+              <FileName>lowerlayer_doorResult.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\01.app\lowerlayer\lowerlayer_doorResult.c</FilePath>
+            </File>
+            <File>
+              <FileName>lowerlayer_doorResult.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\01.app\lowerlayer\lowerlayer_doorResult.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1311,6 +1321,26 @@
               <FileName>upperlayer_bms.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\01.app\upperlayer\upperlayer_bms.h</FilePath>
+            </File>
+            <File>
+              <FileName>upperlayer_charger.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\01.app\upperlayer\upperlayer_charger.c</FilePath>
+            </File>
+            <File>
+              <FileName>upperlayer_charger.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\01.app\upperlayer\upperlayer_charger.h</FilePath>
+            </File>
+            <File>
+              <FileName>upperlayer_openDoor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\01.app\upperlayer\upperlayer_openDoor.c</FilePath>
+            </File>
+            <File>
+              <FileName>upperlayer_openDoor.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\01.app\upperlayer\upperlayer_openDoor.h</FilePath>
             </File>
           </Files>
         </Group>

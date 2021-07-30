@@ -64,6 +64,7 @@
 #include "lowerlayer_Analyze.h"
 #include "lowerlayer_cfg.h"
 #include "lowerlayer_openDoor.h"
+#include "lowerlayer_doorResult.h"
 #include "lowerlayer_bms.h"
 #include "lowerlayer_chargerInfo.h"
 
@@ -72,6 +73,8 @@
 #include "upperlayer_subState.h"
 #include "upperlayer_cfg.h"
 #include "upperlayer_bms.h"
+#include "upperlayer_charger.h"
+#include "upperlayer_openDoor.h"
 #include "upperlayer_Parse.h"
 #include "upperlayer_reply.h"
 

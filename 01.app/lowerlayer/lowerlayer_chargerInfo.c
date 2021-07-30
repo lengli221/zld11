@@ -2,6 +2,17 @@
 
 ChargerInfo chargerInfo[SysCtr_AllDoorNum] = {0};
 
+/*
+** get Charger Info
+**	@param:
+**		uint8:仓门地址
+**	@return:
+**		ChargerInfo:充电器详细信息
+*/
+ChargerInfo get_ChargerInfo(uint8 addr){
+	return chargerInfo[addr];
+}
+
 /*----------------------------------------------Reply------------------------------------------------------------------------*/
 /*
 ** fill Charger
