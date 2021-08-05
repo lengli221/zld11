@@ -95,30 +95,30 @@ void SM_UpperLayerReply_Task(void* p_arg){
 		*/
 		ctr_StateLogic();
 		
-		/*
-		** sub State Logic
-		*/
-		sub_StateLogic();		
-		
-		/*
-		** bms Logic
-		*/
-		bms_Logic();	
+//		/*
+//		** sub State Logic
+//		*/
+//		sub_StateLogic();		
+//		
+//		/*
+//		** bms Logic
+//		*/
+//		bms_Logic();	
 
-		/*
-		** charger Logic
-		*/
-		charger_Logic();		
-		
-		/*
-		** open Door Proc
-		*/
-		open_DoorProc();	
+//		/*
+//		** charger Logic
+//		*/
+//		charger_Logic();		
+//		
+//		/*
+//		** open Door Proc
+//		*/
+//		open_DoorProc();	
 
-		/*
-		** open Door Result Proc 
-		*/
-		open_DoorResultProc();		
+//		/*
+//		** open Door Result Proc 
+//		*/
+//		open_DoorResultProc();		
 		
 		/*
 		** CAN1 Tx Task

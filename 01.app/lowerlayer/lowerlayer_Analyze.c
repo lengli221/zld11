@@ -7,7 +7,7 @@ static const LowerlayerFunTable lowerlayerFunTable[] = {
 	{LL_FunId_StateInfo_01,Lowerlayer_ParseStateInfo},
 	{LL_FunId_Cfg_02,Lowerlayer_ParseCfg},
 	{LL_FunId_OpenDoor_03,Lowerlayer_ParseOpenDoor},
-	{DstAddr_BoardCast_Define,Lowerlayer_ParseDoorResult},
+	{LL_FunId_DoorResult_04,Lowerlayer_ParseDoorResult},
 	{LL_FunId_BmsInfo_80,Lowerlayer_ParseBms},
 	{LL_FunId_ChargerInfo_81,Lowerlayer_ParseCharger}
 };
